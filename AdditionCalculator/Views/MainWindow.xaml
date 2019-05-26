@@ -5,6 +5,16 @@
         prism:ViewModelLocator.AutoWireViewModel="True"
         Title="{Binding Title}" Height="350" Width="525">
     <Grid>
-        <ContentControl prism:RegionManager.RegionName="ContentRegion" />
+        <StackPanel>
+            <TextBox Text="{Binding ValA}"/>
+            <TextBox Text="{Binding ValB}"/>
+            <Button Content="計算" Command="{Binding AddCommand}"/>
+            <TextBlock Text="{Binding ValC}" />
+        </StackPanel>
+        <!--
+        <ContentControl prism:RegionManager.RegionName="ContentRegion" >
+            
+        </ContentControl>
+        -->
     </Grid>
 </Window>

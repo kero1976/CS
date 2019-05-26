@@ -1,0 +1,2 @@
+﻿Visual Studio2019環境でC#7とPrism7.1を使って、下記と同じような足し算アプリを作成する
+https://teratail.com/questions/74961
