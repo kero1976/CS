@@ -6,10 +6,11 @@
         Title="{Binding Title}" Height="350" Width="525">
     <Grid>
         <StackPanel>
-            <TextBox Text="{Binding ValA}"/>
-            <TextBox Text="{Binding ValB}"/>
+            <TextBox Text="{Binding ValA.Value}"/>
+            <TextBox Text="{Binding ValB.Value}"/>
             <Button Content="計算" Command="{Binding AddCommand}"/>
-            <TextBlock Text="{Binding ValC}" />
+            <TextBlock Text="{Binding ValC.Value}" />
+            <TextBlock Text="{Binding ErrMsg.Value}"/>
         </StackPanel>
         <!--
         <ContentControl prism:RegionManager.RegionName="ContentRegion" >
